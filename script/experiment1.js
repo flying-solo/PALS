@@ -188,64 +188,83 @@ function displayAnswerpost() {
     document.getElementById("result-11").innerHTML =
       "This is the correct answer!";
   }
-  if (document.getElementById("option-11").checked) {
+  if (document.getElementById("option-21").checked) {
     c++;
-    document.getElementById("block-11").style.border = "3px solid limegreen";
-    document.getElementById("result-11").style.color = "limegreen";
-    document.getElementById("result-11").innerHTML = "Correct!";
+    document.getElementById("block-21").style.border = "3px solid limegreen";
+    document.getElementById("result-21").style.color = "limegreen";
+    document.getElementById("result-21").innerHTML = "Correct!";
   }
-  if (document.getElementById("option-12").checked) {
-    document.getElementById("block-12").style.border = "3px solid red";
-    document.getElementById("result-12").style.color = "red";
-    document.getElementById("result-12").innerHTML = "Incorrect!";
-    document.getElementById("block-11").style.border = "3px solid limegreen";
-    document.getElementById("result-11").style.color = "limegreen";
-    document.getElementById("result-11").innerHTML =
+  if (document.getElementById("option-22").checked) {
+    document.getElementById("block-22").style.border = "3px solid red";
+    document.getElementById("result-22").style.color = "red";
+    document.getElementById("result-22").innerHTML = "Incorrect!";
+    document.getElementById("block-21").style.border = "3px solid limegreen";
+    document.getElementById("result-21").style.color = "limegreen";
+    document.getElementById("result-21").innerHTML =
       "This is the correct answer!";
   }
-  if (document.getElementById("option-11").checked) {
+  if (document.getElementById("option-31").checked) {
     c++;
-    document.getElementById("block-11").style.border = "3px solid limegreen";
-    document.getElementById("result-11").style.color = "limegreen";
-    document.getElementById("result-11").innerHTML = "Correct!";
+    document.getElementById("block-31").style.border = "3px solid limegreen";
+    document.getElementById("result-31").style.color = "limegreen";
+    document.getElementById("result-31").innerHTML = "Correct!";
   }
-  if (document.getElementById("option-12").checked) {
-    document.getElementById("block-12").style.border = "3px solid red";
-    document.getElementById("result-12").style.color = "red";
-    document.getElementById("result-12").innerHTML = "Incorrect!";
-    document.getElementById("block-11").style.border = "3px solid limegreen";
-    document.getElementById("result-11").style.color = "limegreen";
-    document.getElementById("result-11").innerHTML =
+  if (document.getElementById("option-32").checked) {
+    document.getElementById("block-32").style.border = "3px solid red";
+    document.getElementById("result-32").style.color = "red";
+    document.getElementById("result-32").innerHTML = "Incorrect!";
+    document.getElementById("block-31").style.border = "3px solid limegreen";
+    document.getElementById("result-31").style.color = "limegreen";
+    document.getElementById("result-31").innerHTML =
       "This is the correct answer!";
   }
-  if (document.getElementById("option-11").checked) {
+  if (document.getElementById("option-41").checked) {
     c++;
-    document.getElementById("block-11").style.border = "3px solid limegreen";
-    document.getElementById("result-11").style.color = "limegreen";
-    document.getElementById("result-11").innerHTML = "Correct!";
+    document.getElementById("block-41").style.border = "3px solid limegreen";
+    document.getElementById("result-41").style.color = "limegreen";
+    document.getElementById("result-41").innerHTML = "Correct!";
   }
-  if (document.getElementById("option-12").checked) {
-    document.getElementById("block-12").style.border = "3px solid red";
-    document.getElementById("result-12").style.color = "red";
-    document.getElementById("result-12").innerHTML = "Incorrect!";
-    document.getElementById("block-11").style.border = "3px solid limegreen";
-    document.getElementById("result-11").style.color = "limegreen";
-    document.getElementById("result-11").innerHTML =
+  if (document.getElementById("option-42").checked) {
+    document.getElementById("block-42").style.border = "3px solid red";
+    document.getElementById("result-42").style.color = "red";
+    document.getElementById("result-42").innerHTML = "Incorrect!";
+    document.getElementById("block-41").style.border = "3px solid limegreen";
+    document.getElementById("result-41").style.color = "limegreen";
+    document.getElementById("result-41").innerHTML =
       "This is the correct answer!";
   }
-  if (document.getElementById("option-11").checked) {
+  if (document.getElementById("option-54").checked) {
     c++;
-    document.getElementById("block-11").style.border = "3px solid limegreen";
-    document.getElementById("result-11").style.color = "limegreen";
-    document.getElementById("result-11").innerHTML = "Correct!";
+
+    document.getElementById("block-54").style.border = "3px solid limegreen";
+    document.getElementById("result-54").style.color = "limegreen";
+    document.getElementById("result-54").innerHTML = "Correct!";
   }
-  if (document.getElementById("option-12").checked) {
-    document.getElementById("block-12").style.border = "3px solid red";
-    document.getElementById("result-12").style.color = "red";
-    document.getElementById("result-12").innerHTML = "Incorrect!";
-    document.getElementById("block-11").style.border = "3px solid limegreen";
-    document.getElementById("result-11").style.color = "limegreen";
-    document.getElementById("result-11").innerHTML =
+  if (document.getElementById("option-51").checked) {
+    document.getElementById("block-51").style.border = "3px solid red";
+    document.getElementById("result-51").style.color = "red";
+    document.getElementById("result-51").innerHTML = "Incorrect!";
+    document.getElementById("block-54").style.border = "3px solid limegreen";
+    document.getElementById("result-54").style.color = "limegreen";
+    document.getElementById("result-54").innerHTML =
+      "This is the correct answer!";
+  }
+  if (document.getElementById("option-53").checked) {
+    document.getElementById("block-53").style.border = "3px solid red";
+    document.getElementById("result-53").style.color = "red";
+    document.getElementById("result-53").innerHTML = "Incorrect!";
+    document.getElementById("block-54").style.border = "3px solid limegreen";
+    document.getElementById("result-54").style.color = "limegreen";
+    document.getElementById("result-54").innerHTML =
+      "This is the correct answer!";
+  }
+  if (document.getElementById("option-52").checked) {
+    document.getElementById("block-52").style.border = "3px solid red";
+    document.getElementById("result-52").style.color = "red";
+    document.getElementById("result-52").innerHTML = "Incorrect!";
+    document.getElementById("block-54").style.border = "3px solid limegreen";
+    document.getElementById("result-54").style.color = "limegreen";
+    document.getElementById("result-54").innerHTML =
       "This is the correct answer!";
   }
   alert(`Your score is ${(c * 100) / 5}%`);
