@@ -22,5 +22,9 @@ function value(id) {
   switch (id) {
     case "ans-sim-1-step-1":
       return "G1*G2";
+    case "ans-sim-1-step-2":
+      return "G5+G6";
+    case "ans-sim-1-step-3":
+      return "1/(G5+G6)";
   }
 }
