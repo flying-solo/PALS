@@ -5,70 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiment One</title>
+    <title>Procedure</title>
     <link rel="stylesheet" href="../css/exp1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a57612992d.js" crossorigin="anonymous"></script>
+
 
 </head>
 
 <body>
     <div class="box">
         <div class="menu">
-              <a class="mainMenu" href="prelab.html">
-                <div class="menuItems">Pre-Lab Question</div>
+            <a class="mainMenu" href="prelab.html">
+                <div class="menuItems">Pre-Lab Question </div>
             </a>
-             <a class="mainMenu" href="postlab.html">
-          <div class="menuItems">Post-Lab Question</div>
-        </a>
             <a class="mainMenu" href="theory.html">
                 <div class="theory menuItems">Theory</div>
             </a>
-            <a class="mainMenu" href="#">
+            <a class="mainMenu" href="procedure.html">
                 <div class="procedure menuItems" id="procedure">Procedure</div>
             </a>
             <a class="mainMenu" href="simulation.html">
                 <div class="simulation menuItems">Simulation</div>
             </a>
-        
+            <a class="mainMenu" href="listOfExperiment.html">
+                <div class="menuItems">List Of Experiments</div>
+            </a>
+
+            <a class="mainMenu" href="postlab.html">
+                <div class="menuItems">Post-Lab Question</div>
+            </a>
+
+
         </div>
 
         <div class="procedureContent content">
             <h2>Procedure</h3>
-                <p class="para">To demonstrate the technique of block diagram reduction to simply complex systems by
-                    using visual illustration in virtual lab.</p>
+                <p class="para">To demonstrate the technique of block diagram reduction to simply complex systems by using visual illustration in virtual lab.</p>
                 <ol style="padding:1rem 2rem" class="procedureSteps">
                     <li>When blocks are connected in cascade the reduced gain is Gn = G1 * G2 * …*Gn</li>
                     <li>When blocks are connected in parallel the reduced gain is Gn = G1 + G2 + …+Gn</li>
-                    <li>When take-off point is shifted after the gain block, then the reduced gain Gn is modified by
-                        adding a block of transfer function ‘1/G’ in series with the signal taking off from that point
-                    </li>
-                    <li>When take-off point is shifted before the gain block, then the reduced gain Gn is modified by
-                        adding a block of transfer function ‘G’ in series with the signal taking off from that point.
-                    </li>
-                    <li>When summing point is shifted after the gain block, then the reduced gain Gn is modified by
-                        adding a block of transfer function ‘G’ before the summing point. </li>
-                    <li>When summing point is shifted before the gain block, then the reduced gain Gn is modified by
-                        adding a block of transfer function ‘1/G’ before the summing point. </li>
-                    <li>In order to eliminate the negative feedback loop in a closed loop system having the feedback H,
-                        the block diagram is modified by <br><img src="../image/procedure7.png" width="400"><br>C(S) / R(S) = G / (1+GH),
-                        where C(S) is the output, R(S) is the input and G is the gain block.
-                        </li>
-                        <li>In order to eliminate the positive feedback loop in a closed loop system having the feedback H, the block diagram is modified by <br><img src="../image/procedure8.png" width="400"></li>
-                </ol>
-            <h2>Steps for Reduction</h3>
-                <ul style="padding-left: 2rem;">
-                    <li><strong>Rule 1 − </strong>Check for the blocks connected in series and simplify</li>
-                    <li><strong>Rule 2 − </strong>Check for the blocks connected in parallel and simplify</li>
-                    <li><strong>Rule 3 − </strong>Check for the blocks connected in feedback loop and simplify.</li>
-                    <li><strong>Rule 4 − </strong>If there is difficulty with take-off point while simplifying, shift it towards right.</li>
-                    <li><strong>Rule 5 − </strong>If there is difficulty with summing point while simplifying, shift it towards left.</li>
-                    <li><strong>Rule 6 − </strong>Repeat the above steps till you get the simplified form, i.e., single block.</li>
 
-                </ul>
+                    <li>When take-off point is shifted before the gain block, then the reduced gain Gn is modified by adding a block of transfer function ‘G’ in series with the signal taking off from that point.
+                    </li>
+                    <li>When summing point is shifted after the gain block, then the reduced gain Gn is modified by adding a block of transfer function ‘G’ before the summing point. </li>
+
+                    <li>In order to eliminate the negative feedback loop in a closed loop system having the feedback H, the block diagram is modified by <br><img src="../image/procedure7.png" width="400"><br>C(S) / R(S) = G / (1+GH), where C(S) is the output,
+                        R(S) is the input and G is the gain block.
+                    </li>
+                    <li>In order to eliminate the positive feedback loop in a closed loop system having the feedback H, the block diagram is modified by <br><img src="../image/procedure8.png" width="400"></li>
+                </ol>
+                <h2>Steps for Reduction</h3>
+                    <ul style="padding-left: 2rem;">
+                        <li><strong>Rule 1 − </strong>Check for the blocks connected in series and simplify</li>
+                        <li><strong>Rule 2 − </strong>Check for the blocks connected in parallel and simplify</li>
+                        <li><strong>Rule 3 − </strong>Check for the blocks connected in feedback loop and simplify.</li>
+                        <li><strong>Rule 4 − </strong>If there is difficulty with take-off point while simplifying, shift it towards right.</li>
+                        <li><strong>Rule 5 − </strong>If there is difficulty with summing point while simplifying, shift it towards left.</li>
+                        <li><strong>Rule 6 − </strong>Repeat the above steps till you get the simplified form, i.e., single block.</li>
+
+                    </ul>
         </div>
     </div>
 </body>
