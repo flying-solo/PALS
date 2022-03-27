@@ -47,7 +47,7 @@ function value(id) {
     case "ans-sim-1-step-6":
       return ["1/G1G2", "1/(G1*G2))"];
     case "ans-sim-1-step-7":
-      return ["H3/G1G2(G5+G8)", "H3/(G1*G2)(G5+G8)", "H3/G1(G5+G8)g2"];
+      return ["H3/G1G2(G5+G6)", "H3/(G1*G2)(G5+G6)", "H3/G1(G5+G6)G2"];
     case "ans-sim-1-step-8":
       return ["G1G2G3", "G1*G2*G3"];
     case "ans-sim-1-step-9":
