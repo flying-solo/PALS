@@ -57,7 +57,10 @@ function value(id) {
     case "ans-sim-1-step-11":
       return ["G1G2G3/(1+G1G2G3H1)", "G1*G2*G3/(1+G1*G2*G3*H1)"];
     case "ans-sim-1-step-11":
-      return ["G1G2G3/(1+G1G2G3H1)", "G1*G2*G3/(1+G1*G2*G3*H1)"];
+      return [
+        "G1G2G3G4(G5+G6)/(1+G1G2G3H1)(1+G4H2(G5+G6))",
+        "G1*G2*G3*G4(G5+G6)/(1+G1*G2*G3*H1)(1+G4*H2*(G5+G6))",
+      ];
     case "ans-sim-1-step-12":
       return [
         "G1G2G3G4(G5+G6)/((1+G1G2G3H1)(1+G4H2(G5+G6)+G3G4H3))",
