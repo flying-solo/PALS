@@ -6,7 +6,7 @@ function show_ans(btn) {
   let val = document.getElementById(`${btn.id}-h`).value;
   val = val.replaceAll(" ", "").toUpperCase();
   const ans = value(btn.id);
-  if (ans === val) {
+  if (ans.includes(val)) {
     document.getElementById(`${btn.id}-w`).innerHTML =
       "Correct answer! You can now move to the next simulation.";
     document.getElementById(`${btn.id}-w`).style.color = "#00FF00";
@@ -21,12 +21,22 @@ function show_ans(btn) {
 function value(id) {
   switch (id) {
     case "ans-sim-1-step-1":
-      return "G1*G2";
+      return ["G1*G2", "G1G2"];
     case "ans-sim-1-step-2":
-      return "G5+G6";
+      return ["G5+G6"];
     case "ans-sim-1-step-3":
-      return "1/(G5+G6)";
+      return ["1/(G5+G6)"];
     case "ans-sim-1-step-4":
-      return "G4*(G5+G6)";
+      return ["H3/(G5+G6)"];
+    case "ans-sim-1-step-5":
+      return ["G4*(G5+G6)", "G4(G5+G6)"];
+    case "ans-sim-1-step-6":
+      return ["1/G1G2", "1/(G1*G2))"];
+    case "ans-sim-1-step-7":
+      return ["H3/G1G2(G5+G8)", "H3/(G1*G2)(G5+G8)", "H3/G1(G5+G8)g2"];
+    case "ans-sim-1-step-8":
+      return ["G1G2G3", "G1*G2*G3"];
+    case "ans-sim-1-step-9":
+      return ["G1G2G3/(1+G1G2G3H1)", "G1*G2*G3/(1+G1*G2*G3*H1)"];
   }
 }
