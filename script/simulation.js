@@ -1,3 +1,5 @@
+let counter = 0;
+
 function show_help(btn) {
   document.getElementById(`${btn.id}-h`).style.visibility = "visible";
 }
@@ -11,11 +13,23 @@ function show_ans(btn) {
       "Correct answer! You can now move to the next simulation.";
     document.getElementById(`${btn.id}-w`).style.color = "#00FF00";
     document.getElementById(`${btn.id}-n`).style.visibility = "visible";
-  } else {
+  } else if (counter < 3 && !ans.includes(val)) {
+    counter++;
     document.getElementById(`${btn.id}-w`).innerHTML =
       "Wrong answer! Try again or click on hint button.";
     document.getElementById(`${btn.id}-w`).style.color = "#ff0000";
+  } else {
+    document.getElementById(`${btn.id}-w`).innerHTML =
+      "Wrong answer! Try again or click on the answer button to get the answer and move forward!";
+    document.getElementById(`${btn.id}-w`).style.color = "#ff0000";
+    document.getElementById(`${btn.id}-ans`).style.visibility = "visible";
+    document.getElementById(`${btn.id}-n`).style.visibility = "visible";
   }
+}
+
+function show_final_answer(btn) {
+  const id = btn.id.substring(0, btn.id.lastIndexOf("-"));
+  document.getElementById(`${id}-w`).innerHTML = `Answer: ${value(id)[0]}`;
 }
 
 function value(id) {
